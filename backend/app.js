@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("./middlewares/cors");
+const { swaggerUi, specs } = require('./swagger');
 const { testConnection } = require('./database/config/db');
 
 const mealsRoutes = require("./routes/meals");
@@ -13,6 +14,8 @@ const app = express();
 app.use(bodyParser.json());
 app.use(express.static("public"));
 app.use(cors); // Use CORS middleware
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 
 app.use("/meals", mealsRoutes);
 app.use("/orders", ordersRoutes);
