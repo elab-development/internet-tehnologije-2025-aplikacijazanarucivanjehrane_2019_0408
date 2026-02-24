@@ -2,11 +2,11 @@
 const mysql = require('mysql2/promise');
 
 const dbConfig = {
-    host: 'localhost',
-    user: 'root',
-    password: '', // Empty password for XAMPP default
-    database: 'food_order_app',
-    port: 3306,
+    host: process.env.DB_HOST || 'localhost',
+    user: process.env.DB_USER || 'root',
+    password: process.env.DB_PASSWORD || '',
+    database: process.env.DB_NAME || 'food_order_app',
+    port: process.env.DB_PORT || 3306,
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0
@@ -29,3 +29,26 @@ async function testConnection() {
 }
 
 module.exports = { pool, testConnection };
+```
+
+---
+
+### 6. **.dockerignore fajlovi**
+
+**backend/.dockerignore:**
+```
+node_modules
+npm-debug.log
+.env
+.git
+.gitignore
+```
+
+**frontend/.dockerignore:**
+```
+node_modules
+npm-debug.log
+dist
+.env
+.git
+.gitignore
