@@ -1,1 +1,68 @@
-[]
+[
+    {
+        "items": [
+            {
+                "id": "m1",
+                "name": "Mac & Cheese",
+                "price": "8.99",
+                "description": "Jelena Creamy cheddar cheese mixed with perfectly cooked macaroni, topped with crispy breadcrumbs. A classic comfort food.",
+                "image": "images/mac-and-cheese.jpg",
+                "quantity": 2
+            },
+            {
+                "id": "m2",
+                "name": "Margherita Pizza",
+                "price": "12.99",
+                "description": "A classic pizza with fresh mozzarella, tomatoes, and basil on a thin and crispy crust.",
+                "image": "images/margherita-pizza.jpg",
+                "quantity": 1
+            }
+        ],
+        "customer": {
+            "name": "test12345",
+            "email": "test12345@gmail.com",
+            "street": "testerova 1",
+            "postal-code": "78888",
+            "city": "Nis"
+        },
+        "id": "643.6248350094568",
+        "totalPrice": "30.97"
+    },
+    {
+        "items": [
+            {
+                "id": "m7",
+                "name": "Steak Frites",
+                "price": "17.99",
+                "description": "Succulent steak cooked to your preference, served with crispy golden fries and herb butter.",
+                "image": "images/steak-frites.jpg",
+                "quantity": 1
+            },
+            {
+                "id": "m12",
+                "name": "Pancake Stack",
+                "price": "8.99",
+                "description": "Fluffy pancakes stacked high, drizzled with maple syrup and topped with fresh berries.",
+                "image": "images/pancake-stack.jpg",
+                "quantity": 1
+            },
+            {
+                "id": "m15",
+                "name": "Chocolate Brownie",
+                "price": "5.99",
+                "description": "A rich and fudgy brownie, topped with a scoop of vanilla ice cream and chocolate sauce.",
+                "image": "images/chocolate-brownie.jpg",
+                "quantity": 1
+            }
+        ],
+        "customer": {
+            "name": "Mihailo Savic",
+            "email": "misa.savic.2000@gmail.com",
+            "street": "Luke Vojvodica",
+            "postal-code": "11090",
+            "city": "Beograd"
+        },
+        "id": "415.4425428371821",
+        "totalPrice": "32.97"
+    }
+]

@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "id": "429499.3208379019",
+    "name": "Mihailo Savic",
+    "email": "misa.savic.2000@gmail.com",
+    "password": "$2b$12$mG5Khq9bElnxq42LpcFtaeGg1r5K2x6DZ2ZPy/u7Ywr/mK9hVg8pW",
+    "type": "admin"
+  }
+]
