@@ -1,4 +1,6 @@
 import Header from "./components/header/Header.jsx";
+import Login from "./components/account/Login.jsx";
+import Register from "./components/account/Register.jsx";
 
 import { CartContextProvider } from "./store/CartContext.jsx";
 import UserProgressContext, { UserProgressContextProvider } from "./store/UserProgressContext.jsx";
@@ -16,6 +18,8 @@ export default function App() {
               <Header />
             </div>
           </div>
+          <Login />
+          <Register />
         </CartContextProvider>
       </UserProgressContextProvider>
     </AuthContextProvider>
