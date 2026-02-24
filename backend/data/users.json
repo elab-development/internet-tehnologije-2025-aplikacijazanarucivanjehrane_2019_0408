@@ -5,5 +5,19 @@
     "email": "misa.savic.2000@gmail.com",
     "password": "$2b$12$mG5Khq9bElnxq42LpcFtaeGg1r5K2x6DZ2ZPy/u7Ywr/mK9hVg8pW",
     "type": "admin"
+  },
+  {
+    "id": "20767.09408929689",
+    "name": "Mika Mikic",
+    "email": "mika.mikic@gmail.com",
+    "password": "$2b$12$wIAYf/UFdhvUq09lEYOl7eihuoWFp..IDcrvFZ2t2HAx3nyH2SZXq",
+    "type": "regular"
+  },
+  {
+    "id": "126809.23608210238",
+    "name": "Pera Peric",
+    "email": "pera.peric@gmail.com",
+    "password": "$2b$12$I6EZxbpzPrOSUqFezLPD2e6V7/vvr1dtxWFTvFJ/gXFSdKRbL6YUq",
+    "type": "loyalty"
   }
 ]
