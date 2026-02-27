@@ -1,14 +1,15 @@
 version: '3.8'
 
 services:
-  # MySQL baza
+
   mysql:
     image: mysql:8.0
     container_name: foodapp-mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: food_order_app
+      MYSQL_ROOT_PASSWORD: 
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_DATABASE: food_order_app_new
     ports:
       - "3306:3306"
     volumes:
@@ -16,8 +17,13 @@ services:
       - ./backend/database/schema.sql:/docker-entrypoint-initdb.d/schema.sql
     networks:
       - foodapp-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
 
-  # Backend API
   backend:
     build:
       context: ./backend
@@ -29,23 +35,19 @@ services:
     environment:
       DB_HOST: mysql
       DB_USER: root
-      DB_PASSWORD: root
-      DB_NAME: food_order_app
+      DB_PASSWORD: 
+      DB_NAME: food_order_app_new
       DB_PORT: 3306
     depends_on:
-      - mysql
-    volumes:
-      - ./backend:/app
-      - /app/node_modules
+      mysql:
+        condition: service_healthy
     networks:
       - foodapp-network
-    command: sh -c "sleep 10 && node app.js"
 
-  # Frontend React app
   frontend:
     build:
-      context: ./frontend
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: src/Dockerfile
     container_name: foodapp-frontend
     restart: always
     ports:

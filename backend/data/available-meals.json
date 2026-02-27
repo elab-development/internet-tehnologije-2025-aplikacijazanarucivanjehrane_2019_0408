@@ -3,7 +3,7 @@
     "id": "m1",
     "name": "Mac & Cheese",
     "price": "8.99",
-    "description": "Jelena Creamy cheddar cheese mixed with perfectly cooked macaroni, topped with crispy breadcrumbs. A classic comfort food.",
+    "description": "Creamy cheddar cheese mixed with perfectly cooked macaroni, topped with crispy breadcrumbs. A classic comfort food.",
     "image": "images/mac-and-cheese.jpg"
   },
   {
@@ -142,8 +142,8 @@
   {
     "id": "m35855",
     "name": "Salmon",
-    "description": "idemo daleko da spasimo svet lososom zauvek",
     "price": "9.99",
+    "description": "Salmon, sea fish",
     "image": "images/salmon.jpg"
   }
 ]

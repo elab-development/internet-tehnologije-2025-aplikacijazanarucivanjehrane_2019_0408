@@ -19,5 +19,19 @@
     "email": "pera.peric@gmail.com",
     "password": "$2b$12$I6EZxbpzPrOSUqFezLPD2e6V7/vvr1dtxWFTvFJ/gXFSdKRbL6YUq",
     "type": "loyalty"
+  },
+  {
+    "id": "467265.31439332117",
+    "name": "Natalija Savic",
+    "email": "nata@gmail.com",
+    "password": "$2b$12$DKFjbhjFPsllmU1iRfXKRuIvn34wBid81JPKOZIByhLPJOcNr9R4S",
+    "type": "regular"
+  },
+  {
+    "id": "391664.8312095004",
+    "name": "Vuk Cosic",
+    "email": "vukc31000@gmail.com",
+    "password": "$2b$12$8R2ym1piMFEuOqFyGbQUeO8o4velC4nwMlBIW2DGojHVxzt2w8qR6",
+    "type": "regular"
   }
 ]

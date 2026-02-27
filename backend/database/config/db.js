@@ -5,7 +5,7 @@ const dbConfig = {
     host: process.env.DB_HOST || 'localhost',
     user: process.env.DB_USER || 'root',
     password: process.env.DB_PASSWORD || '',
-    database: process.env.DB_NAME || 'food_order_app',
+    database: process.env.DB_NAME || 'food_order_app_new',
     port: process.env.DB_PORT || 3306,
     waitForConnections: true,
     connectionLimit: 10,
@@ -29,26 +29,3 @@ async function testConnection() {
 }
 
 module.exports = { pool, testConnection };
-```
-
----
-
-### 6. **.dockerignore fajlovi**
-
-**backend/.dockerignore:**
-```
-node_modules
-npm-debug.log
-.env
-.git
-.gitignore
-```
-
-**frontend/.dockerignore:**
-```
-node_modules
-npm-debug.log
-dist
-.env
-.git
-.gitignore

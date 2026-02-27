@@ -3,8 +3,8 @@
 -- ============================================
 
 -- Create database
-CREATE DATABASE IF NOT EXISTS food_order_app;
-USE food_order_app;
+CREATE DATABASE IF NOT EXISTS food_order_app_new;
+USE food_order_app_new;
 
 -- ============================================
 -- Table: customers (users)
